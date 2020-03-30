@@ -13,7 +13,7 @@ const forecast =function(lang,lati,callback){
         }
         else{
             callback(undefined,'Currently The Temperature Is '+response.body.currently.temperature +
-            '.\n It will be mostly '+response.body.hourly.summary+'.\nProbability of '+response.body.daily.summary+'.' )
+            '.\n It will be mostly '+response.body.hourly.summary+'.\nThere is a Probability of '+response.body.daily.summary+'.' )
            }    
       })  
     }
