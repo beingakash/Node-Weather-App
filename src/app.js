@@ -78,9 +78,12 @@ app.get('/products', (req, res) => {
 })
 
 
-app.get('/help', (req, res) => {
+app.get('/about', (req, res) => {
 
-    res.send('Help')
+    res.render('about', {
+        title: 'About',
+        name: 'Akash kumar'
+    })
 })
 
 
